@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+html {
+font-family: 'Inter', sans-serif;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: #050505;
+background-image: radial-gradient(circle at top right, rgba(250, 204, 21, 0.03) 0%, transparent 40%),
+radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.02) 0%, transparent 40%);
+background-attachment: fixed;
+}
+
+.glass-panel {
+background: rgba(255, 255, 255, 0.03);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.animate-fade-in-up {
+animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+background: #333;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #facc15;
+}
